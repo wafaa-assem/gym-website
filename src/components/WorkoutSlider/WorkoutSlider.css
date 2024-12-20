@@ -1,0 +1,33 @@
+.swiper {
+  height: 400px !important;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: 96%;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper-button-prev {
+  left: 88.4%;
+  background-image: url("../../assets/chevron-left.svg");
+}
+.swiper-button-next {
+  right: 66px;
+  background-image: url("../../assets/chevron-right.svg");
+}
+
+@media (max-width: 1300px) {
+  .swiper {
+    height: auto !important;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
